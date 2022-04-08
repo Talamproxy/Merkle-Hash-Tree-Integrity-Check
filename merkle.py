@@ -17,13 +17,11 @@ class Merkle_tree:
         j=0
         for i in range(0, len(hashArray)-1):
             f = str(hashArray[i]+hashArray[i+1])
-            hashArray[j]=hashlib.md5(f.encode()).hexdigest()
             print(f)
+            hashArray[j]=hashlib.md5(f.encode()).hexdigest()
+            
             i+=2
             j+=1
+        del hashArray[j:]
         print(hashArray)
-
-        remainder=i-j
-        del hashArray[-remainder:]
-
     
