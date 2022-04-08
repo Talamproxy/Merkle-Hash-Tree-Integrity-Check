@@ -25,3 +25,5 @@ class Merkle_tree:
         del hashArray[j:]
         print(hashArray)
     
+if __name__ == "__main__":
+     Merkle_tree()
