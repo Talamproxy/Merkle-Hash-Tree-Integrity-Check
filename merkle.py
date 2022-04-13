@@ -14,7 +14,7 @@ class Merkle_tree:
         hash=hashlib.md5(binary_file).hexdigest()
         hashArray.append(hash)
 
-print("This is the initial")
+    print("This is the hash value of all the file in the folder:")
     print(hashArray)
     #Checks to see if the item is an array are even, if not it appends the last item in the array to make it even 
     if(len(hashArray)%2!=0):
@@ -33,6 +33,7 @@ print("This is the initial")
         del hashArray[j:]
 
     if (len(hashArray)==1):
+        print("This is the Top Hash") 
         print(hashArray)
     
 if __name__ == "__main__":
