@@ -36,9 +36,9 @@ class Merkle_tree:
     if (len(hashArray)==1):
         print("The Top Hash generated:") 
         print(hashArray)
-        with open("integrity_check.txt", "w") as a:
+        with open("integrity_check.docx", "w") as a:
             a.write(hashArray[0])
-        print("The Top Hash has been saved in integrity_check.txt") 
+        print("The Top Hash has been saved in integrity_check.docx") 
         
     
 if __name__ == "__main__":
