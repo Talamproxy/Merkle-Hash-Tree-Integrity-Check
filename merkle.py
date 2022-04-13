@@ -33,7 +33,7 @@ class Merkle_tree:
         del hashArray[j:]
 
     if (len(hashArray)==1):
-        print("This is the Top Hash") 
+        print("This is the Top Hash:") 
         print(hashArray)
     
 if __name__ == "__main__":
