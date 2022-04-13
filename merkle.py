@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 import glob, os, hashlib
 
-from more_itertools import value_chain 
 
 
 class Merkle_tree:
