@@ -16,11 +16,12 @@ class Merkle_tree:
 
     print("This is the hash value of all the file in the folder:")
     print(hashArray)
+    print("\n")
     #Checks to see if the item is an array are even, if not it appends the last item in the array to make it even 
     if(len(hashArray)%2!=0):
             hashArray.append(hashArray[-1])
      
-    #This function concatinates all the files in the array by combining two items in an array and finding its hash value
+    #This while loop concatinates all the files in the array by combining two items in an array and finding its hash value
     #The size of the array is round on the while loop untill only one top hash is left
     while(len(hashArray)>1):
         j=0
@@ -32,9 +33,14 @@ class Merkle_tree:
             j+=1
         del hashArray[j:]
 
+    #This If statement checks to see if the top hash has been generated and if true it creates a file named integrity_check.txt and saves the top hash
     if (len(hashArray)==1):
-        print("This is the Top Hash:") 
+        print("The Top Hash generated:") 
         print(hashArray)
+        with open("integrity_check.txt", "w") as a:
+            a.write(hashArray[0])
+        print("The Top Hash has been saved in integrity_check.txt") 
+        
     
 if __name__ == "__main__":
      Merkle_tree()
