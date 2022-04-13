@@ -3,8 +3,10 @@ import glob, os, hashlib
 
 
 class Merkle_tree:
+    #Points in the directory in which the files to be hashed are 
     os.chdir("/home/kali/Desktop/merkle/Merkle-Hash-Tree-Integrity-Check")
     hashArray = [] 
+    #Indicate that all .txt files in the folder
     for file in glob.glob("*.txt"):
         binary_file=open(file, 'rb').read()
         hash=hashlib.md5(binary_file).hexdigest()
