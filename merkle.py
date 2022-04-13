@@ -20,8 +20,8 @@ class Merkle_tree:
     if(len(hashArray)%2!=0):
             hashArray.append(hashArray[-1])
      
-    #This while loop concatinates all the files in the array by combining two items in an array and finding its hash value
-    #The size of the array is round on the while loop untill only one top hash is left
+    #This while loop concatenates all the files in the array by combining two items in an array and finding its hash value
+    #The size of the array is round on the while loop until only one top hash is left
     while(len(hashArray)>1):
         j=0
         for i in range(0, len(hashArray)-1):
