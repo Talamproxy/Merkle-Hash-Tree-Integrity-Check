@@ -43,11 +43,7 @@ class Merkle_tree:
     
 if __name__ == "__main__":
      Merkle_tree()
-randoms are 1
-randoms are 2
-randoms are 3
-randoms are 4
-randoms are 5
-randoms are 6
-randoms are 7
-randoms are 8
+The Top hash is c4ca4238a0b923820dcc509a6f75849b
+The Top hash is c81e728d9d4c2f636f067f89cc14862c
+The Top hash is eccbc87e4b5ce2fe28308fd9f2a7baf3
+The Top hash is a87ff679a2f3e71d9181a67b7542122c
