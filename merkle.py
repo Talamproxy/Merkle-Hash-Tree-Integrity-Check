@@ -43,3 +43,11 @@ class Merkle_tree:
     
 if __name__ == "__main__":
      Merkle_tree()
+randoms are 1
+randoms are 2
+randoms are 3
+randoms are 4
+randoms are 5
+randoms are 6
+randoms are 7
+randoms are 8
